@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  /* font-family: 'Open Sans', sans-serif; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.main__heading {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2rem;
+  font-weight: 500;
+  color: rgb(37, 95, 46);
+}
+
+.shoulder__line {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+  margin-top: 5%;
+  margin: 0;
+  color: #478555;
+}
+
+.panel {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: rgb(37, 95, 46);
+  height: 80vh;
+  width: 40vw;
+  border-radius: 5px;
+  cursor: pointer;
+  flex: 1.7;
+  margin: 5px;
+  position: relative;
+  transition: all 700ms ease-in;
+  padding: 2%;
+}
+
+.panel.active {
+  flex: 9;
+}
+
+.cards {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: center;
+  min-height: 400px;
+  padding-bottom: 4%;
+  font-weight: lighter;
+}
+
+.card__plant {
+  flex: 1;
+}
+
+.card__plant-content {
+  font-size: 0.8rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  color: #fff;
+  flex: 0.5;
+}
+
+/*Filter styles*/
+.invert {
+  filter: invert(100%);
+  width: 50px;
+}
+
+.cards__description {
+  text-align: left;
+  padding: 2%;
+}
